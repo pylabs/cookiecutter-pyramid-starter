@@ -8,10 +8,10 @@ python_version = "3.5"
 
 [packages]
 pyramid = "*"
-"pyramid-jinja2" = "*"
+pyramid_jinja2 = "*"
 
 [dev-packages]
-pyramid-debugtoolbar = "*"
+pyramid_debugtoolbar = "*"
 waitress = "*"
 pytest = "*"
 pylint = "*"
