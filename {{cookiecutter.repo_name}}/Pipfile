@@ -1,0 +1,17 @@
+[[source]]
+url = "https://pypi.org/simple"
+name = "pypi"
+verify_ssl = true
+
+[requires]
+python_version = "3.5"
+
+[packages]
+pyramid = "*"
+"pyramid-jinja2" = "*"
+
+[dev-packages]
+pyramid-debugtoolbar = "*"
+waitress = "*"
+pytest = "*"
+pylint = "*"
