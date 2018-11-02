@@ -11,8 +11,8 @@ def main():
     regex = re.compile(REGEX, flags=re.MULTILINE)
 
     # generate secret key
-    for file_name in ['development.ini', 'production.ini']:
-        ini_file = os.path.join(working_dir, file_name)
+    for file_name in ['development.ini.sample', 'production.ini.sample']:
+        ini_file = os.path.join(working_dir, os.path.splitext(file_name)[0])
         with open(ini_file) as f:
             content = f.read()
         random_string = ''.join(random.SystemRandom().choice(string.ascii_lowercase + string.digits) for _ in range(50))
