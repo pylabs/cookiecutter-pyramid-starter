@@ -9,11 +9,15 @@ python_version = "3.5"
 [packages]
 pyramid = "*"
 pyramid_jinja2 = "*"
+pyramid_beaker = "*"
+invoke = "*"
 
 [dev-packages]
 pyramid_debugtoolbar = "*"
 waitress = "*"
 pytest = "*"
-pylint = "*"
+pytest-cov = "*"
+pytest-mock = "*"
+flake8 = "*"
 rope = "*"
 "autopep8" = "*"
