@@ -12,14 +12,17 @@ requires = [
     'plaster_pastedeploy',
     'pyramid',
     'pyramid_jinja2',
+    'pyramid_beaker',
     'pyramid_debugtoolbar',
     'waitress',
+    'invoke'
 ]
 
 tests_require = [
     'WebTest',
     'pytest',
     'pytest-cov',
+    'pytest-mock'
 ]
 
 setup(

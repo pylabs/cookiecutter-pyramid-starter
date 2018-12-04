@@ -21,8 +21,13 @@ jinja2.filters =
     route_path = pyramid_jinja2.filters:route_path_filter
     static_path = pyramid_jinja2.filters:static_path_filter
 
-# secret key
-#secret_key = CHANGE_ME
+# pyramid_beaker settings
+session.type = file
+session.data_dir = %(here)s/data/sessions/data
+session.lock_dir = %(here)s/data/sessions/lock
+session.key = CHANGE_ME
+session.secret = CHANGE_ME
+session.cookie_on_exception = true
 
 # By default, the toolbar only appears for clients from IP addresses
 # '127.0.0.1' and '::1'.
